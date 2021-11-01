@@ -1,0 +1,52 @@
+.splitted_text .word,
+.splitted_text .letter {
+  display: inline-block;
+}
+
+/*
+    typing animation
+*/
+.y2_before_type {
+  color: transparent;
+}
+.y2_type {
+  animation: y2_type var(--duration);
+}
+@keyframes y2_type {
+  from {
+    opacity: var(--opacity);
+    transform: var(--transform);
+    color: var(--color);
+    text-shadow: var(--textShadow);
+  }
+  to {
+    opacity: inherit;
+    transform: inherit;
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+/*
+    sendColors() animation
+*/
+.y2_sendColors {
+  animation: y2_sendColors var(--duration);
+}
+@keyframes y2_sendColors {
+  0% {
+    color: var(--color_1);
+    transform: var(--transform);
+    text-shadow: var(--textShadow);
+  }
+  33% {
+    color: var(--color_2);
+  }
+  66% {
+    color: var(--color_3);
+  }
+  100% {
+    color: inherit;
+    transform: inherit;
+    text-shadow: inherit;
+  }
+}
