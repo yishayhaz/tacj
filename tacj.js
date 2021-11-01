@@ -1,4 +1,4 @@
-const y2 = {
+const tacj = {
     splitText: (who, cb) => {
         splitText(who, cb)
     },
@@ -146,4 +146,4 @@ function sendAnimation(){
     }
 }
 
-module.exports = y2;
+module.exports = tacj;
