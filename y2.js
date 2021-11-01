@@ -145,3 +145,5 @@ function sendAnimation(){
         }, data.speed);
     }
 }
+
+module.exports = y2;
