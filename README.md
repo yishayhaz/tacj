@@ -1,13 +1,17 @@
 # import
 
-Install the files the [current version](https://github.com/Yishay666/y2/v1.0) into `your_directory/y2`,
-then import the files
-
 ```html
-<head>
-  <link rel="stylesheet" href="./y2/y2.css" />
-</head>
-<script src="./y2/y2.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/tacj@1.0.1/y2.css">
+<script src="https://unpkg.com/tacj@1.0.1/y2.js"></script
+```
+
+or,
+
+```javascript
+npm i tacj
+
+import tacj from 'tacj/tacj.js'
+import 'tacj/tacj.css'
 ```
 
 # First, SplitText
@@ -23,7 +27,7 @@ the second argument is not required,<br/>it's a callback function that will exec
 it will look something like this:
 
 ```javascript
-y2.splitText("p", cb);
+tacj.splitText("p", cb);
 ```
 
 <br/>
@@ -52,7 +56,7 @@ and if you want to use one of this signs - `[{_^` just put `~` before, works for
 basic syntax:
 
 ```javascript
-y2.animate("p", { type: "typing" });
+tacj.animate("p", { type: "typing" });
 ```
 
 functions first argument is the selector, then settings, and a callback function (not required).
@@ -70,7 +74,7 @@ textShadow: "2px 2px orange" // any valid text-shadow value
 **the code for the gif above:**
 
 ```javascript
-y2.animate(
+tacj.animate(
   "p",
   {
     type: "typing",
@@ -93,7 +97,7 @@ y2.animate(
 basic syntax:
 
 ```javascript
-y2.animate("p", { type: "sendColors" });
+tacj.animate("p", { type: "sendColors" });
 ```
 
 functions first argument is the selector, then settings, and a callback function (not required).
@@ -113,7 +117,7 @@ textShadow: "2px 2px orange" // any valid text-shadow value
 the gif above on action:
 
 ```javascript
-y2.animate(
+tacj.animate(
   "p",
   {
     type: "sendColors",
@@ -131,7 +135,7 @@ y2.animate(
 you can also do this:
 
 ```javascript
-y2.animate(
+tacj.animate(
   "p",
   {
     type: "sendColors",
@@ -149,6 +153,16 @@ y2.animate(
 ```
 
 > Note: everything is not required except `type:`
+
+**For safer usage** put the animate function in the cb of splitText, like this:
+
+```javascript
+tacj.splitText("p", () => {
+  tacj.animate("p", { type: "sendColors" });
+});
+```
+
+But, you can call the animate() function any time.
 
 # End
 

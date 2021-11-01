@@ -1,8 +1,8 @@
 {
   "name": "tacj",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "awesome paragraph animations",
-  "main": "y2.js",
+  "main": "tacj.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
