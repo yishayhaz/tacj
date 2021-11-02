@@ -146,4 +146,8 @@ function sendAnimation(){
     }
 }
 
-module.exports = tacj;
+try{
+    module.exports = tacj;
+} catch {
+
+}
