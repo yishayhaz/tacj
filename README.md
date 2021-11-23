@@ -1,8 +1,9 @@
 # import
 
+cdn links:
 ```html
-<link rel="stylesheet" href="https://unpkg.com/tacj@1.0.1/y2.css">
-<script src="https://unpkg.com/tacj@1.0.1/y2.js"></script
+<link rel="stylesheet" href="https://unpkg.com/tacj@1.0.2/tacj.css">
+<script src="https://unpkg.com/tacj@1.0.2/tacj.js"></script>
 ```
 
 or,
