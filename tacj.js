@@ -63,9 +63,9 @@ function splitText(who, cb='undefined') {
 }
 
 let root = document.documentElement.style;
-let data = {}
 
 function typing(who, settings, cb='undefined') {
+    let data = {}
     // function variables
     var spans = document.querySelectorAll(`${who} .letter`);
     time = settings.time || 5;
@@ -96,10 +96,11 @@ function typing(who, settings, cb='undefined') {
         if(cb != 'undefined') cb();
     })
     // animate them inside
-    sendAnimation();
+    sendAnimation(data);
 }
 
 function sendColors(who, settings, cb='undefined') {
+    let data = {}
     // function variables
     var spans = document.querySelectorAll(`${who} .letter`);
     time = settings.time || 5;
@@ -134,16 +135,16 @@ function sendColors(who, settings, cb='undefined') {
         if(cb != 'undefined') cb();
     })
     // animate them inside
-    sendAnimation();
+    sendAnimation(data);
 }
 // THE function
-function sendAnimation(){
+function sendAnimation(data){
     if (data.i < data.spans.length) {
         data.spans[data.i].classList.add(data.className);
         data.spans[data.i].classList.remove(data.before_className);
         data.i++;
         setTimeout(() => {
-            sendAnimation();
+            sendAnimation(data);
         }, data.speed);
     }
 }
