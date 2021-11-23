@@ -167,11 +167,7 @@ But, you can call the animate() function any time.
 
 # End
 
-I created this library because every other option in pretty shitty, or costs you money (hm hhm gsap),
-you can use my code however you want, its not that good anyways,
+I created this library because every it was very hard for me to find a good library for this kind of animations,
 
-if you have anything to say / ask / approve / complain / demand,
-Im on discord [Post Malone#0376](https://discord.com/channels/me/484834908758605824), or on twitter [@yishayhaz)](https://twitter.com/yishayhaz),
-
-for now, lets party <br/>
-![pepe-pepe-drinking](https://user-images.githubusercontent.com/50710472/139740244-6fd77ed6-1d8d-431d-a8da-8d0b22df2877.gif)
+if you have anything to say / ask / approve / complain ->
+Im on discord [Post Malone#0376](https://discord.com/channels/me/484834908758605824), or on twitter [@yishayhaz](https://twitter.com/yishayhaz).
