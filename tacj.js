@@ -86,9 +86,10 @@ function typing(who, settings, cb='undefined') {
     root.setProperty('--textShadow', settings.textShadow || 'inherit');
 
     // add before_tag & remove all the tags in case of re-animate
-    spans.forEach(span => span.classList.add(data.before_className));
-    spans.forEach(span => span.classList.remove(data.className));
-
+    spans.forEach(span => {
+        span.classList.add(data.before_className);
+        span.classList.remove(data.className);
+    });
 
     spans[spans.length-1].addEventListener('animationend', () => {
         spans.forEach(span => span.classList.remove(data.className));
@@ -123,9 +124,10 @@ function sendColors(who, settings, cb='undefined') {
     root.setProperty('--textShadow', settings.textShadow);
 
     // add before_tag & remove all the tags in case of re-animate
-    spans.forEach(span => span.classList.add(data.before_className));
-    spans.forEach(span => span.classList.remove(data.className));
-
+    spans.forEach(span => {
+        span.classList.add(data.before_className);
+        span.classList.remove(data.className);
+    });
 
     spans[spans.length-1].addEventListener('animationend', () => {
         spans.forEach(span => span.classList.remove(data.className));
@@ -148,6 +150,4 @@ function sendAnimation(){
 
 try{
     module.exports = tacj;
-} catch {
-
-}
+} catch {}
